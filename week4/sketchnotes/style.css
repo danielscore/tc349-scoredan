@@ -1,0 +1,52 @@
+body {
+	font-family: "Times New Roman", serif;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2{
+	margin: 0;
+}
+
+h1 {
+	font-size: 64px;
+	border-bottom: 5px solid #000;
+	border-top: 5px solid #000;
+	text-align: center;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+
+.wrapper {
+	width: 780px;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+
+img {
+	max-width: 100%;
+}
+
+section {
+	background: #efefef;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+article .date, article .author {
+	color: #cc3f14;
+	font-weight: bold;
+}
+
+hr {
+	height: 0;
+	border-top: 2px solid #000;
+	width: 95%;
+	margin: 25px auto;
+}
+
+
