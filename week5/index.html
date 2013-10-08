@@ -3,50 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Card Sorting - NASA Moon Site</title>
-	<style>
-		body {
-			font-size: 18px;
-			line-height: 1.2;
-		}
-
-		.wrapper {
-			width: 800px;
-			margin: 0 auto;
-		}
-
-		img {
-			max-width: 100%;
-			display: block;
-			margin: 0 auto;
-		}
-
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-
-		.columned {
-			overflow: hidden;
-			background: #efefef;
-			padding: 20px;
-		}
-
-		.columned li {
-			width: 50%;
-			float: left;
-		}
-
-		table {
-			border-collapse: collapse;
-		}
-		
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="wrapper">
 		<header>
-			<h1>Card Sorting <span>NASA Moon Site</span></h1>
+			<h1>Card Sorting</h1> 
+			<h2>NASA Moon Site</h2>
 		</header>	
 		<p>For an assignment, I had to use the card sorting system on an already existing web site.  The purpose of this was to determine how to layout information on the site in an intuitive, user-friendly way. The site I conducted this on was the <a href="http://moon.nasa.gov/home.cfm">NASA Moon Site</a>.  The tool I used for cards sorting is <a href="http://websort.net">WebSort</a>.
 		<p>In order to break the site down into bits of content, I looked at the current link structure.  I did this since all the differerent links on the page pointed to the content available for the site.  I ended up with mainly the links from the navigation, as well as a few other links.  I used the text in those links to describe the different pieces of content.  Looking back, I think that wasn't the best idea to just go with link text for the most part.  I think the issue I fell into with that was that those link names were crafted to fit together in the current information architecture of the site.  I think next time, I'll need to try and make the content item names less biased/pregrouped.</p>
@@ -76,7 +39,16 @@
 			<li>Calendar</li>
 			<li>Strategic Partners</li>
 		</ul>
-		<p>I entered these items into WebSort, and did one sort myself.  On top of my sort, there were 6 other people that participated.  WebSort assigned them anonymous names so I don't know who all did the sort.</p>
+		<p>I entered these items into WebSort, and did one sort myself.</p>
+		
+		<table>
+			<tr>
+				<td>Daniel Score</td>
+				<td>About, Events, Missions &amp; Exploration, Moon, People, Tools, Visual Media</td>
+			</tr>
+		</table>
+		
+		<p>On top of my sort, there were 6 other people that participated.  WebSort assigned them anonymous names so I don't know who all did the sort.</p>
 
 		<table>
 			<tr>
@@ -94,10 +66,6 @@
 			<tr>
 				<td>anon-176b64</td>
 				<td>Current Stuff, Fun Facts, Learn More, Media, Missions, People</td>
-			</tr>
-			<tr>
-				<td>anon-d9651c</td>
-				<td>About, Events, Missions &amp; Exploration, Moon, People, Tools, Visual Media</td>
 			</tr>
 			<tr>
 				<td>anon-346ed0</td>
@@ -144,5 +112,7 @@
 		<p>I also used the Items x Items option to see how often items would be grouped together</p>
 		<img src="itemxitem.png" alt="Item x Item Sort">
 		<p>From this, I found that About the Moon, Common Moon Misconceptions, and Moon Facts were always grouped together. This was also true for Past Missions, Present Missions, and Future Missions</p>
+
+		<p>Looking at what I found, not too many people groupes stuff together in a similar fashion.  Some categories were extremely basic while others were more complex.  My sort was somewhat close to the original site but was not totally the same.  I think next time I should work on breaking the site down into items better.<p>
 	</div>
 </html>
