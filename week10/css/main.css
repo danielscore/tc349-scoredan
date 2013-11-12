@@ -313,6 +313,14 @@ nav a:hover {
         margin: 0;
         width: 100%;
     }
+
+    nav ul {
+        margin: 0;
+    }
+
+    section {
+        padding: 2%;
+    }
     .gallery {
         text-align: center;
         width: 90%;
