@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1><a href="index.html">danscore.com</a></h1>
+			<nav>
+				<div class="mobile-nav">
+					<ul>
+						<li class="selected"><a href="index.html">Portfolio</a></li>
+						<li><a href="skills.html">Skills</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<button class="nav-toggle"></button>
+				</div>
+			</nav>
+		</header>
+		
+		<section>
+			<h2>Projects</h2>
+			<p>Here are a few of the projects I've done in the past.  This list includes school projects, projects I've done at work, as well stuff I've experimented with on my own time.</p>
+			<article class="project">
+				<img src="http://placehold.it/380x380" alt="">
+				<div class="description">
+					<h3>Project name</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
+				</div>
+			</article>
+			<article class="project">
+				<img src="http://placehold.it/380x380" alt="">
+				<div class="description">
+					<h3>Project name</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
+				</div>
+			</article>
+			<article class="project">
+				<img src="http://placehold.it/380x380" alt="">
+				<div class="description">
+					<h3>Project name</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
+				</div>
+			</article>
+			<article class="project">
+				<img src="http://placehold.it/380x380" alt="">
+				<div class="description">
+					<h3>Project name</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
+				</div>
+			</article>
+			<article class="project">
+				<img src="http://placehold.it/380x380" alt="">
+				<div class="description">
+					<h3>Project name</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
+				</div>
+			</article>
+			<article class="project">
+				<img src="http://placehold.it/380x380" alt="">
+				<div class="description">
+					<h3>Project name</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
+				</div>
+			</article>
+		</section>
+		<footer>
+			&copy; Copyright 2013 Daniel Score
+		</footer>
+	</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	$(function(){
+		if($(window).width() <= 480) {
+			$('.nav-toggle').click(function(e){
+				e.preventDefault();
+				$('nav ul li:not(".selected")').animate({height:"toggle"});
+			});
+		}
+	});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,294 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* Set Base font familiy, line height, size*/
+body {
+	font-size: 100%;
+	font-family: 'Droid Serif', serif;
+	font-weight: normal;
+	color: #222;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* Header and Nav Styling */
+
+header {
+	border-bottom: 4px solid #555;
+	padding: .5em 0;
+}
+
+header h1,
+header nav,
+nav li {
+	display: inline-block;
+}
+
+header h1 {
+	font-size: 2em;
+}
+
+header h1 a {
+	text-decoration: none;
+	color: #555;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #555;
+	display: block;
+	padding: .2em .4em;
+}
+
+nav li:hover a,
+nav li.selected a {
+	background: #555;
+	color: #fff;
+}
+
+/* Footer Styling */
+footer {
+	text-align: center;
+	padding: 1em;
+}
+
+/* Portfolio Page Styling */
+section {
+	overflow: hidden;
+}
+
+section h2 {
+	font-weight: bold;
+	font-size: 2.4em;
+	line-height: 1.5;
+}
+
+section p {
+	font-size: 1.2em;
+	line-height: 1.2;
+}
+
+.project {
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.project h3 {
+	font-size: 1.8em;
+}
+
+.project img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.project .description {
+	position: absolute;
+	bottom: -100%;
+	background: rgba(100,100,100,.8);
+	color: #fff;
+	padding: .4em;
+	visibility: hidden;
+	transition: all .25s ease-in-out;
+}
+
+.project:hover .description {
+	bottom: 0;
+	visibility: visible;
+}
+
+
+/* Responsivenss */
+
+@media (min-width: 1000px) {
+	nav .mobile-nav button {
+		display: none;
+	}
+
+	nav ul li {
+		display: inline-block;
+	}
+	section .project {
+		width: 32%;
+		margin: .5% .5% 0 0;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 1000px) {
+	nav .mobile-nav button{
+		display: none;
+	}
+
+	nav ul li {
+		display: inline-block;
+	}
+
+	section .project {
+		width: 49%;
+		margin: .5% .5% 0 0;
+	}
+}
+
+@media (max-width: 480px) {
+	header {
+		border-bottom: none;
+	}
+	header h1,
+	header nav {
+		display: block;
+	}
+
+	nav {
+		position: relative;
+		min-height: 34px;
+	}
+
+
+	nav .mobile-nav button{
+		position: absolute;
+		right: 2px;
+		top: 2px;
+		border: 0;
+		padding: 15px;
+		margin: 0;
+		display: block;
+	}
+
+	nav li {
+		display: block;
+	}
+
+	nav li a {
+		font-size: 1.5em;
+	}
+
+	.project {
+		margin: .5em auto;
+	}
+
+	.project .description {
+		position: static;
+		display: block;
+		visibility: visible;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

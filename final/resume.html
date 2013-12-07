@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1><a href="index.html">danscore.com</a></h1>
+			<nav>
+				<div class="mobile-nav">
+					<ul>
+						<li><a href="index.html">Portfolio</a></li>
+						<li><a href="skills.html">Skills</a></li>
+						<li class="selected"><a href="resume.html">Resume</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<button class="nav-toggle"></button>
+				</div>
+			</nav>
+		</header>
+		
+		<section>
+			<h2>Resume</h2>
+			
+		</section>
+		<footer>
+			&copy; Copyright 2013 Daniel Score
+		</footer>
+	</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	$(function(){
+		if($(window).width() <= 480) {
+			$('.nav-toggle').click(function(e){
+				e.preventDefault();
+				$('nav ul li:not(".selected")').animate({height:"toggle"});
+			});
+		}
+	});
+</script>
+</body>
+</html>
+
