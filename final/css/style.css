@@ -120,7 +120,8 @@ body {
 
 header h1 a {
 	text-decoration: none;
-	color: #555;
+	/*color: #555;*/
+	color: #643FE8;
 }
 
 nav li a {
@@ -164,6 +165,22 @@ section p {
 }
 
 /* Portfolio Styling */
+.media-element {
+	overflow: hidden;
+	padding: 1em;
+	background: #cfcfcf;
+	border-radius: .5em;
+}
+
+
+.media-element img {
+	float: left;
+	max-width: 100%;
+	margin-right: 1em;
+}
+
+
+
 .project {
 	float: left;
 	position: relative;
@@ -256,34 +273,67 @@ section p {
 
 .social .twitter {
 	background-color: #555;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACaklEQVR42u3aTUhUURjGcSemhhJNMKiMgkKwFKyBUsHIQkxs0yI30aamZqe0CRRqoTRgtOgDpIVuRQqhEqyNbUQKhAhCB6E20XebMgtxmnT6uxuoaZq5Z857br4P/GA2c+A+zJ17OO8tSqVSq5oWoAVoAVqAFqAFaAFagBagBWgBWoAWoAW4owS1OIwGbFstBVThFl4jPfMYx4kM3yvDMQRtFnAUuw1efBTzyJYRlKEI1biId7hk8xewBtOYxSYDF9+JXBLHUySxkhmEbBZQiZ9YyRS2erj4eiwh38SxGQHUIGijgDakZxb78lzrEfLNK3SgF9OIIGCjgPbU7/mKszmuswfLyDc/0j5ft3kLNCNT7qHmH9eJwESu2n4MVmABmbKAflRnWacXXpJAp9Q+YAzZsoj7OImKP6zRDS95I7kRakQumcMEruEcWhAzUMAGyZ1gDyTzAkGJAlpxHjtwA0lI5InULdCetkd/hkVIZFiqgJ1IQjpdkn+C45BOk2QBhyCZTyiVPg+4DKkMuXIg0geJtLp0InQQDzAHG4ljrSsF7McZRPEQSyh0Ii6dCdbCZmYQcu1QtE/23pcvYB3GUOgMuHwsvh4DKFSeo8QPc4FmjOA9vhnc9FT5bTBSjCsGngqf0eC3ydBe3MGygQOPOr/MBkvRhttIwGsmscu14WgAB3AapxBFDKN4CxNJIIaQq9PhLejBF5jOXYT9Mh4vRwem4CUfMYh6P78fEMYFjOIlvv9lkvMBj3ETx1H+v70gEcJ2hNGEFhxBHSqxUd8Q0QK0AC1AC9ACtAAtQAvQArQALUAL0AK0AFG/ADVE276ItLozAAAAAElFTkSuQmCC);
+	background-image: url(../img/twitter-64.png);
+	/*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACaklEQVR42u3aTUhUURjGcSemhhJNMKiMgkKwFKyBUsHIQkxs0yI30aamZqe0CRRqoTRgtOgDpIVuRQqhEqyNbUQKhAhCB6E20XebMgtxmnT6uxuoaZq5Z857br4P/GA2c+A+zJ17OO8tSqVSq5oWoAVoAVqAFqAFaAFagBagBWgBWoAWoAW4owS1OIwGbFstBVThFl4jPfMYx4kM3yvDMQRtFnAUuw1efBTzyJYRlKEI1biId7hk8xewBtOYxSYDF9+JXBLHUySxkhmEbBZQiZ9YyRS2erj4eiwh38SxGQHUIGijgDakZxb78lzrEfLNK3SgF9OIIGCjgPbU7/mKszmuswfLyDc/0j5ft3kLNCNT7qHmH9eJwESu2n4MVmABmbKAflRnWacXXpJAp9Q+YAzZsoj7OImKP6zRDS95I7kRakQumcMEruEcWhAzUMAGyZ1gDyTzAkGJAlpxHjtwA0lI5InULdCetkd/hkVIZFiqgJ1IQjpdkn+C45BOk2QBhyCZTyiVPg+4DKkMuXIg0geJtLp0InQQDzAHG4ljrSsF7McZRPEQSyh0Ii6dCdbCZmYQcu1QtE/23pcvYB3GUOgMuHwsvh4DKFSeo8QPc4FmjOA9vhnc9FT5bTBSjCsGngqf0eC3ydBe3MGygQOPOr/MBkvRhttIwGsmscu14WgAB3AapxBFDKN4CxNJIIaQq9PhLejBF5jOXYT9Mh4vRwem4CUfMYh6P78fEMYFjOIlvv9lkvMBj3ETx1H+v70gEcJ2hNGEFhxBHSqxUd8Q0QK0AC1AC9ACtAAtQAvQArQALUAL0AK0AFG/ADVE276ItLozAAAAAElFTkSuQmCC);*/
 }
 
 .social .github {
 	background-color: #555;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADKklEQVR42u3aTUgUYQCH8bFISyMT2/zaMjpFRWESZCQrFgQVS2aaIVl0LNKLEHixgyVSFIGHvjzkMSiKvOT2cSi2wJIOJUVZEZilku5S2mplz0FhWOYdZ3Pnndl6//A7qXN4mJ1dd0abnJz8r6kAKoAKoAKoACqACqACqAAqgAogxRIUoRr1ODGlHtUogudfC5CPWnRiEDNtCAHUIT+RA6zBZYTwtwujDWsTKUAamjGKeG0MLVjo9gAF6IZde45CtwbwIwS7F8ZutwUoxwRk7Scq3RLAhx+QvQhKnQ6Qh0+IXi+CGMFsF0IQvYjeZyxzMsAtGG2bLtAxvEGse4s6eKGhFEbrcCpAOYwWNvg0twgn0YFGVMGHwik+7EMjOtCMxdB0Mk3OqErZAVLQA6O9Rwq0OJuHXhjtNeZLDEBx8fqQakOABfgI0fbLDHAXZltny0dr8z2QFWAFIhDtA/JsCJCDdxBtHCtlBDgIs+2AZpPtMNthGQEuQrQn0GwWhGhtMgI8gmgNEgIch2iPbQ4w9VYknl9CgF1g4rdgOwOkYwCibZUQoASiDSHDzgCZ+Gr5Aij/QjgCj5NnwCEJAWqsnwHyrwFnJARoce4aADyEaM8kBOiCaEF5nwPE2wTNJhvxG6JdkRGgBma7b2OAgBs+CeYjArOdlvXal/+/ABDATGuHF9oseXEVzMKZJylABfRrhR/XoN8AzqJY9w1PkuCY+p9lwIdzGISVVckMkIyXUTcsCqChFkbrRyeyoAlk4R6+IJa9Qoq8AMAe6DeGzdDQDqO1WjjuecS6Cqe+Fb4J/V4gGem4g+htgGaO34ltt538WjwXfdCvHBrmogxNaEAJ5lg4Zja+wcr64XUuAFCMMUyvBxmzOJ7H4g2VCErccm+wDOOYXhe2IElwlTezFCGYbQJ73XZ3eCeGDW5n38B1BOCJQ4AQ/G59PmA9nsJov5Br4RhZCMNo3Shw+xMiqWgyuJCNWrxg5Rj87XecQloiPSO0ChcwrDsDsi2+BCZ03/BcwupEfkrMiyOosfg2mIQDOIrl6kFJFUAFUAFUABVABVABVAAVQAVQAezwB0WFfpUw1et7AAAAAElFTkSuQmCC);
+	background-image: url(../img/github-64.png);
 }
 
 .social .linkedin {
 	background-color: #555;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB80lEQVR42u3ZPWhTURiH8QMxxboYDGrBdggmJsYUYxaHdi0EHP2YDF2tH4vSqaIIhU6WUjM4RIR2KGTJILjGQZzETRxcBEMGC42mECKJxGeUSzwvCZrk3vP+4bfl3AsPCbkkptfrOU0DaAANoAE0gAbQABpAA2gADTCU40gghimXAsyihDo6aOMTVhEKeoAz+Iy/7UXQA5QgbSmoAabxFdKKQQ1wAg1IKwc1wBF8hLT1YAYA7sO2n0gFOUAYu+i3FgquPAhdwx7eoYqnmNdHYQ2gAf6lCHLI4woWMDfuADdQsShjxnMmhoog/8frs3iJOrw7xFvcwvQ4AqxDWsJzJgtp92DwAG0wcR+QG3WAR7Ctg7OeMxlIK4AIA6+By5MeIA1pr9HBMPuC6CQHOI//vU3XA/zA6UkNkMIge4MNPEFlgI/Gst8DNHEVxmMR3yBtx+8BrlvuexPS3vs5QFW471HUYFsNx/waYA1G8Aq2HSDq12+B2zCC57DtO076NcAdGMG26wGe+TVA2vUAF1wPkNEAGkADOB1g3vUAFzWA4wGyQQrwGLb9QtxzJgdpd2EERdjWHEWAh+hatPq8Ay6hK1iBEWwJ19gfRYAokhbnEO7zY0ZSEIERnBKuEUdI/xzVABpAA2gADaABNIAG0AAaQANIfgPNw9yzcni3awAAAABJRU5ErkJggg==);
+	background-image: url(../img/linkedin-64.png);
 
 }
 
 /* Skills Styling */
+.skill-wrap {
+	overflow: hidden;
+}
 .skill-block {
-	display: inline-block;
-	width: 48%;
+	float: left;
 	vertical-align: top;
-	margin: .4em auto;
+	background: #cfcfcf;
+	padding: .5em;
+	border-radius: .3em;
+	height: 170px;
 }
 
 .skill-block ul {
 	list-style: circle;
 	margin: 0;
 	padding-left: 2em;
+	font-size: 1.2em;
 }
 
+/* Resume Styling */
+
+.contact-info {
+	padding: 0 0 1em 0;
+}
+
+.job {
+	margin-bottom: 1em;
+	padding: .5em 0;
+}
+
+.job h3 {
+	font-size: 1.8em;
+}
+
+.job h4 {
+	font-size: 1.2em;
+}
+
+.job {
+	border-bottom: 2px solid #555;
+}
+
+.job:last-child {
+	border-bottom: 0;
+}
 
 /* Responsivenss */
 
@@ -335,6 +385,11 @@ x <= 480px
 		display: none;
 	}
 
+	.skill-block {
+		width: 31% !important;
+		margin: .5% .5% 0% 0%;
+	}
+
 }
 
 @media(max-width: 1024px) {
@@ -382,6 +437,12 @@ x <= 480px
 		font-size: 1.5em;
 	}
 
+	.media-element img {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+
 	.project {
 		margin: .5em auto;
 		overflow: hidden;
@@ -401,11 +462,22 @@ x <= 480px
 		width: 32%;
 		margin: .5% .5% 0 0;
 	}
+	.skill-block {
+		width: 45%;
+		margin: .5% .5% 0% 0%;
+	}
 }
 
 @media(max-width: 767px) {
 	.project .description {
 		height: auto;
+	}
+
+	.skill-block {
+		float: none;
+		width: 90%;
+		height: auto;
+		margin: .2em auto;
 	}
 
 	#contact button {
