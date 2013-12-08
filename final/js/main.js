@@ -4,4 +4,10 @@ $(function(){
 		e.preventDefault();
 		$toCollapse.animate({height:"toggle"});
 	});
+
+
+	$('#contact button').click(function(e){
+		e.preventDefault();
+		alert('This doesn\'t really do anything');
+	});
 });
