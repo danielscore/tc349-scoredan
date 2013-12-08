@@ -5,9 +5,9 @@ $(function(){
 		$toCollapse.animate({height:"toggle"});
 	});
 
-
+	// Until I set up an actual mail soluiton
 	$('#contact button').click(function(e){
 		e.preventDefault();
-		alert('This doesn\'t really do anything');
+		alert('Email Sent!');
 	});
 });
