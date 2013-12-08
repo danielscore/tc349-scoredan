@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>danscore.com :: Resume</title>
 	<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/style.css">
 
@@ -19,13 +20,12 @@
 						<li class="selected"><a href="resume.html">Resume</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
-					<button class="nav-toggle"></button>
+					<button class="nav-toggle">V</button>
 				</div>
 			</nav>
 		</header>
 		
 		<section>
-			<h2>Resume</h2>
 			
 		</section>
 		<footer>
@@ -34,16 +34,7 @@
 	</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-	$(function(){
-		if($(window).width() <= 480) {
-			$('.nav-toggle').click(function(e){
-				e.preventDefault();
-				$('nav ul li:not(".selected")').animate({height:"toggle"});
-			});
-		}
-	});
-</script>
 </body>
 </html>
+
 

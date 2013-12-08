@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>danscore.com :: Skills</title>
 	<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/style.css">
 
@@ -19,14 +20,68 @@
 						<li><a href="resume.html">Resume</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
-					<button class="nav-toggle"></button>
+					<button class="nav-toggle">V</button>
 				</div>
 			</nav>
 		</header>
 		
 		<section>
-			<h2>Skills</h2>
-			
+			<article class="skill">
+				<h2>Programming</h2>
+				<p>I began programming in eighth grade, using quickbasic.  I learned a lot of the basics there and pursued more programming in high school.  I'm now a web designer/developer.  I'm constantly learning new things, but here is a list of the major skills I've picked up.</p>
+				<h3>Languages</h3>
+				<ul>
+					<li>CSS3</li>
+					<li>HTML5</li>
+					<li>JavaScript</li>
+					<li>PHP</li>
+					<li>Python</li>
+					<li>QuickBasic</li>
+					<li>Twig</li>
+					<li>VisualBasic.NET</li>
+				</ul>
+				
+				<h3>Libraries</h3>
+				<ul>
+					<li>less css preprocessor</li>
+					<li>jQuery</li>
+					<li>knockout.js</li>
+					<li>Google Calendar API(For PHP)</li>
+				</ul>
+
+				<h3>Social Media</h3>
+				<ul>
+					<li>Opengraph Tags</li>
+					<li>Twitter Cards</li>
+				</ul>
+
+				<h3>Databases</h3>
+					<ul>
+						<li>Data Flow Diagrams</li>
+						<li>Entity Relationship Diagrams</li>
+						<li>Normal Forms</li>
+						<li>Microsoft Access</li>
+					</ul>
+				<h3>Software</h3>
+					<ul>
+						<li>Adobe Photoshop</li>
+						<li>InDesign</li>
+						<li>Sublime Text</li>
+						<li>TransmitFTP</li>
+						<li>Grunt</li>
+						<li>Git (Github and BitBucket)</li>
+					</ul>
+			</article>
+			<article class="skill">
+				<h2>People</h2>
+				<p>I have had experience as a leader, during spring break, the sophomore year of my college education, I helped plan and lead a trip to Detroit to do service work.  I co-planned schedules, meals, and activities for the trip.  I also planned and led bible studies on my own.  I also plan and give bible studies with my local group at campus.</p>
+				<p>At the SNWorks, I help train employees.  I am a lead developer, and assist my peers when they run into trouble.  I deal with problems relating to site layout issues, poorly written or non working code, and general trouble shooting for sites.</p>
+			</article>
+			<article class="skill">
+				<h2>Other</h2>
+				<p>I have a minor in Information Technology where I've learned about project management, theory behind setting up databases, and will soon take a course where as part of a team, we make a web project for a client.</p>
+				<p>I participated in FIRST robotics all through high school, and I became very comfortable using powertools, numerous saws, as well as some basic skills with mills, and lathes.  I've also taken a metalworking class where I learned how braze.</p>
+			</article>
 		</section>
 		<footer>
 			&copy; Copyright 2013 Daniel Score
@@ -34,16 +89,6 @@
 	</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-	$(function(){
-		if($(window).width() <= 480) {
-			$('.nav-toggle').click(function(e){
-				e.preventDefault();
-				$('nav ul li:not(".selected")').animate({height:"toggle"});
-			});
-		}
-	});
-</script>
 </body>
 </html>
 

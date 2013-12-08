@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>danscore.com :: Portfolio</title>
 	<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/style.css">
 
@@ -19,54 +20,55 @@
 						<li><a href="resume.html">Resume</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
-					<button class="nav-toggle"></button>
+					<button class="nav-toggle">V</button>
 				</div>
 			</nav>
 		</header>
 		
 		<section>
-			<h2>Projects</h2>
-			<p>Here are a few of the projects I've done in the past.  This list includes school projects, projects I've done at work, as well stuff I've experimented with on my own time.</p>
+			<p>Here are a few of the projects I've done in the past.  This list includes school projects, projects I've done at work, as well stuff I've experimented with on my own time.  I don't currently have 6 worthy projects to populate this page so a few of them will just be filler.  As my portfolio grows, I will probably implement some sort of pagination, or sorting method to help the viewer more easily find what they want.</p>
 			<article class="project">
-				<img src="http://placehold.it/380x380" alt="">
+				<a target="_blank" href="http://www.awolau.org" alt="AWOL Redesign">
+				<img src="http://placehold.it/380x380">
+				</a>
 				<div class="description">
-					<h3>Project name</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
+					<h3>AWOL</h3>
+					<p>While working at the State News, I helped lead a redesign of AWOL, which was built using bootstrap 2, less, some jQuery, and the Twig templating language.</p>
+				</div>
+			</article>
+			<article class="project">
+				<img src="http://placehold.it/380x380" alt="Google Calendar Plugin">
+				<div class="description">
+					<h3>Google Calendar Plugin</h3>
+					<p>At SNWorks, I'm updating the old PHP google calendar plugin that used Zend's gData library to use oauth2.0</p>
+				</div>
+			</article>
+			<article class="project">
+				<img src="http://placehold.it/380x380" alt="KnockoutJS Form">
+				<div class="description">
+					<h3>KnockoutJS Form</h3>
+					<p>At SNWorks, I'm currently building some forms using KnockoutJS.  This is for a larger project guides project.</p>
 				</div>
 			</article>
 			<article class="project">
 				<img src="http://placehold.it/380x380" alt="">
 				<div class="description">
 					<h3>Project name</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium.</p>
 				</div>
 			</article>
 			<article class="project">
 				<img src="http://placehold.it/380x380" alt="">
 				<div class="description">
 					<h3>Project name</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium.</p>
 				</div>
 			</article>
 			<article class="project">
 				<img src="http://placehold.it/380x380" alt="">
 				<div class="description">
 					<h3>Project name</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
-				</div>
-			</article>
-			<article class="project">
-				<img src="http://placehold.it/380x380" alt="">
-				<div class="description">
-					<h3>Project name</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
-				</div>
-			</article>
-			<article class="project">
-				<img src="http://placehold.it/380x380" alt="">
-				<div class="description">
-					<h3>Project name</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium nisi sapiente hic modi ipsum optio ipsam delectus totam nam neque architecto libero!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consectetur, autem nihil suscipit rerum iure saepe praesentium.</p>
 				</div>
 			</article>
 		</section>
@@ -76,16 +78,6 @@
 	</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-	$(function(){
-		if($(window).width() <= 480) {
-			$('.nav-toggle').click(function(e){
-				e.preventDefault();
-				$('nav ul li:not(".selected")').animate({height:"toggle"});
-			});
-		}
-	});
-</script>
 </body>
 </html>
 

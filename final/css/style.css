@@ -101,7 +101,7 @@ input, select {
     vertical-align:middle;
 }
 
-/* Set Base font familiy, line height, size*/
+/* Base styling */
 body {
 	font-size: 100%;
 	font-family: 'Droid Serif', serif;
@@ -111,25 +111,12 @@ body {
 
 .wrapper {
 	width: 90%;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
 /* Header and Nav Styling */
 
-header {
-	border-bottom: 4px solid #555;
-	padding: .5em 0;
-}
-
-header h1,
-header nav,
-nav li {
-	display: inline-block;
-}
-
-header h1 {
-	font-size: 2em;
-}
 
 header h1 a {
 	text-decoration: none;
@@ -143,7 +130,11 @@ nav li a {
 	padding: .2em .4em;
 }
 
-nav li:hover a,
+nav li:hover a {
+	background: #777;
+	color: #fff;
+}
+
 nav li.selected a {
 	background: #555;
 	color: #fff;
@@ -155,14 +146,15 @@ footer {
 	padding: 1em;
 }
 
-/* Portfolio Page Styling */
+/* Page Styling */
 section {
 	overflow: hidden;
+	margin: 1em auto;
 }
 
 section h2 {
 	font-weight: bold;
-	font-size: 2.4em;
+	font-size: 2.2em;
 	line-height: 1.5;
 }
 
@@ -171,6 +163,7 @@ section p {
 	line-height: 1.2;
 }
 
+/* Portfolio Styling */
 .project {
 	float: left;
 	position: relative;
@@ -205,62 +198,94 @@ section p {
 
 /* Responsivenss */
 
-@media (min-width: 1000px) {
+/*
+>= 1200
+	full nav
+	3 projects/row
+	descriptions hover
+
+1024 < x < 1200px
+	full nav
+	3 projects/row
+	descriptions hover
+
+768px <= x <= 1024
+	collapsed nav
+	3 projects/row
+	descriptions block
+
+480 px < x < 768px
+	collapsed nav
+	2 projects/row
+	descriptions block
+
+x <= 480px
+	collapsed nav
+	1 project/row
+	descriptions block
+*/
+
+
+@media (min-width: 1025px) {
+	header {
+		border-bottom: 4px solid #555;
+		padding: .5em 0;
+	}
+
+	header h1,
+	header nav,
+	nav li {
+		display: inline-block !important;
+	}
+
+	header h1 {
+		font-size: 3.5em;
+	}
+
 	nav .mobile-nav button {
 		display: none;
 	}
 
-	nav ul li {
-		display: inline-block;
-	}
-	section .project {
-		width: 32%;
-		margin: .5% .5% 0 0;
-	}
 }
 
-@media (min-width: 480px) and (max-width: 1000px) {
-	nav .mobile-nav button{
-		display: none;
-	}
-
-	nav ul li {
-		display: inline-block;
-	}
-
-	section .project {
-		width: 49%;
-		margin: .5% .5% 0 0;
-	}
-}
-
-@media (max-width: 480px) {
+@media(max-width: 1024px) {
 	header {
 		border-bottom: none;
 	}
+
 	header h1,
 	header nav {
 		display: block;
 	}
 
-	nav {
-		position: relative;
-		min-height: 34px;
+	header h1 {
+		font-size: 2.5em;
 	}
 
+	nav {
+		position: relative;
+	}
 
 	nav .mobile-nav button{
 		position: absolute;
-		right: 2px;
-		top: 2px;
+		right: 3px;
+		top: 3px;
 		border: 0;
-		padding: 15px;
+		height: 30px;
+		width: 30px;
 		margin: 0;
 		display: block;
+		background: #cfcfcf;
 	}
 
-	nav li {
+	nav .selected {
 		display: block;
+		min-height: 36px;
+		background: #555;
+	}
+
+	nav li:not(.selected) {
+		display: none;
 	}
 
 	nav li a {
@@ -269,16 +294,31 @@ section p {
 
 	.project {
 		margin: .5em auto;
+		overflow: hidden;
 	}
 
 	.project .description {
 		position: static;
 		display: block;
 		visibility: visible;
+		overflow: hidden;
+		height: 205px;
+	}	
+}
+
+@media (min-width: 767px) {
+	section .project {
+		width: 32%;
+		margin: .5% .5% 0 0;
+	}
+}
+
+@media(max-width: 767px) {
+	.project .description {
+		height: auto;
 	}
 
 }
-
 
 
 
